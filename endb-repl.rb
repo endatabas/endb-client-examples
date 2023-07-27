@@ -2,7 +2,9 @@
 
 require 'yaml'
 require 'net/http'
+require 'tty-prompt'
 
+prompt = TTY::Prompt.new(interrupt: :exit)
 uri = URI('http://localhost:3803/sql')
 
 puts "Reading 'repl.yaml'..."
@@ -16,8 +18,9 @@ puts "ENTER to execute statement, CTRL+C to quit"
 
 while true do
   puts ""
-  print "SQL> "
-  sql = gets
+  # print "SQL> "
+  # sql = gets
+  sql = prompt.ask("SQL>")
 
   res = Net::HTTP.post(uri, sql, headers)
   puts res.body

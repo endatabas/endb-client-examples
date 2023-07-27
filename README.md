@@ -16,10 +16,22 @@ git clone https://github.com/endatabas/endb-client-examples.git
 cd endb-client-examples
 ```
 
-* Bash: `./endb-repl.sh`
-* Ruby: `./endb-repl.rb` (uses `repl.yaml` to set MIME type)
+### Bash:
+
+```sh
+./endb-repl.sh
+```
 
 Once you've selected a MIME type for your results, enter a single SQL statement.
+
+### Ruby:
+
+```sh
+gem install tty-prompt
+vim repl.yaml # to set MIME type, if you want
+./endb-repl.rb
+```
+
 See [docs.endatabas.com/tutorial](https://docs.endatabas.com/tutorial/sql.html)
 for help.
 
