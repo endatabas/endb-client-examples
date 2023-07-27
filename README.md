@@ -28,12 +28,12 @@ Once you've selected a MIME type for your results, enter a single SQL statement.
 
 ```sh
 gem install tty-prompt
-vim repl.yaml # to set MIME type, if you want
+gem install terminal-table
+vim repl.yaml
 ./endb-repl.rb
 ```
 
-See [docs.endatabas.com/tutorial](https://docs.endatabas.com/tutorial/sql.html)
-for help.
+See [the Endatabas tutorial](https://docs.endatabas.com/tutorial/sql.html) for help.
 
 ## Copyright and License
 

@@ -1,1 +1,5 @@
-mime-type: application/x-ndjson
+# application/json, application/ld+json, application/x-ndjson, text/csv
+mime-type: application/ld+json
+
+# raw, cooked
+output: raw
