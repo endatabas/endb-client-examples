@@ -27,8 +27,7 @@ Once you've selected a MIME type for your results, enter a single SQL statement.
 ### Ruby:
 
 ```sh
-gem install tty-prompt
-gem install terminal-table
+bundle install
 vim repl.yaml
 ./endb-repl.rb
 ```
